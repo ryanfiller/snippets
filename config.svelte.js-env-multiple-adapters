@@ -1,0 +1,39 @@
+// package.json
+
+{
+  "scripts": {
+    "dev": "svelte-kit dev",
+    "build": "svelte-kit build",
+    "surge": "ADAPTER=static npm run export && surge --project ./build"
+  },
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    ...
+  },
+  "devDependencies": {
+    "@sveltejs/adapter-netlify": "^1.0.0-next.17",
+    "@sveltejs/adapter-static": "^1.0.0-next.13",
+	...
+  },
+  ...
+}
+
+// svelte.config.js
+
+import dotenv from 'dotenv'
+dotenv.config()
+
+import adapterNetlify from '@sveltejs/adapter-netlify'
+import adapterStatic from '@sveltejs/adapter-static'
+
+const config = {
+  kit: {
+    adapter: process.env.ADAPTER === 'static'
+      ? adapterStatic({...})
+      : adapterNetlify(),
+    ...
+  },
+  ...
+}
+
+export default config
