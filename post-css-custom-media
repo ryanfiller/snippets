@@ -1,3 +1,4 @@
+/* https://ferie.medium.com/detect-a-touch-device-with-only-css-9f8e30fa1134 */
 @custom-media --touch (hover: none) and (pointer: coarse);
 @custom-media --stylus (hover: none) and (pointer: fine);
 @custom-media --pointer (hover: hover) and (pointer: coarse);
