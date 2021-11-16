@@ -1,0 +1,4 @@
+@custom-media --touch (hover: none) and (pointer: coarse);
+@custom-media --stylus (hover: none) and (pointer: fine);
+@custom-media --pointer (hover: hover) and (pointer: coarse);
+@custom-media --mouse (hover: hover) and (pointer: fine);
