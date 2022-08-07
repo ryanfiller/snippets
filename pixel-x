@@ -1,0 +1,41 @@
+    --pixelX:
+      /* left top top */
+      no-repeat linear-gradient(currentColor, currentColor) calc(0 * var(--pixelSize)) calc(0 * var(--pixelSize)) / var(--pixelSize) var(--pixelSize),
+      /* left top middle */
+      no-repeat linear-gradient(currentColor, currentColor) calc(1 * var(--pixelSize)) calc(1 * var(--pixelSize)) / var(--pixelSize) var(--pixelSize),
+      /* right top top */
+      no-repeat linear-gradient(currentColor, currentColor) calc(4 * var(--pixelSize)) calc(0 * var(--pixelSize)) / var(--pixelSize) var(--pixelSize),
+      /* right top middle */
+      no-repeat linear-gradient(currentColor, currentColor) calc(3 * var(--pixelSize)) calc(1 * var(--pixelSize)) / var(--pixelSize) var(--pixelSize),
+      /* middle middle */
+      no-repeat linear-gradient(currentColor, currentColor) calc(2 * var(--pixelSize)) calc(2 * var(--pixelSize)) / var(--pixelSize) var(--pixelSize),
+      /* left bottom bottom */
+      no-repeat linear-gradient(currentColor, currentColor) calc(1 * var(--pixelSize)) calc(3 * var(--pixelSize)) / var(--pixelSize) var(--pixelSize),
+      /* left bottom middle */
+      no-repeat linear-gradient(currentColor, currentColor) calc(0 * var(--pixelSize)) calc(4 * var(--pixelSize)) / var(--pixelSize) var(--pixelSize),
+      /* right bottom bottom */
+      no-repeat linear-gradient(currentColor, currentColor) calc(3 * var(--pixelSize)) calc(3 * var(--pixelSize)) / var(--pixelSize) var(--pixelSize),
+      /* right bottom middle */
+      no-repeat linear-gradient(currentColor, currentColor) calc(4 * var(--pixelSize)) calc(4 * var(--pixelSize)) / var(--pixelSize) var(--pixelSize)
+    ;
+
+    --pixelXHover:
+      /* left top top -> right top top */
+      no-repeat linear-gradient(currentColor, currentColor) calc(4 * var(--pixelSize)) calc(0 * var(--pixelSize)) / var(--pixelSize) var(--pixelSize),
+      /* left top middle -> right top middle */
+      no-repeat linear-gradient(currentColor, currentColor) calc(3 * var(--pixelSize)) calc(1 * var(--pixelSize)) / var(--pixelSize) var(--pixelSize),
+      /* right top top -> right bottom bottom */
+      no-repeat linear-gradient(currentColor, currentColor) calc(3 * var(--pixelSize)) calc(3 * var(--pixelSize)) / var(--pixelSize) var(--pixelSize),
+      /* right top middle -> right bottom middle */
+      no-repeat linear-gradient(currentColor, currentColor) calc(4 * var(--pixelSize)) calc(4 * var(--pixelSize)) / var(--pixelSize) var(--pixelSize),
+      /* middle middle -> stay */
+      no-repeat linear-gradient(currentColor, currentColor) calc(2 * var(--pixelSize)) calc(2 * var(--pixelSize)) / var(--pixelSize) var(--pixelSize),
+      /* left bottom bottom  -> left top top */
+      no-repeat linear-gradient(currentColor, currentColor) calc(0 * var(--pixelSize)) calc(0 * var(--pixelSize)) / var(--pixelSize) var(--pixelSize),
+      /* left bottom middle -> left top middle */
+      no-repeat linear-gradient(currentColor, currentColor) calc(1 * var(--pixelSize)) calc(1 * var(--pixelSize)) / var(--pixelSize) var(--pixelSize),
+      /* right bottom bottom -> left bottom bottom */
+      no-repeat linear-gradient(currentColor, currentColor) calc(1 * var(--pixelSize)) calc(3 * var(--pixelSize)) / var(--pixelSize) var(--pixelSize),
+      /* right bottom middle -> left bottom middle */
+      no-repeat linear-gradient(currentColor, currentColor) calc(0 * var(--pixelSize)) calc(4 * var(--pixelSize)) / var(--pixelSize) var(--pixelSize)
+    ;
